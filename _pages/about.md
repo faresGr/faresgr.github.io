@@ -6,7 +6,7 @@ subtitle: <a href='https://www.lgi2a.univ-artois.fr/spip/fr/'>Université d'Arto
 
 profile:
   align: right
-  image: fares_pic.jpg
+  image: cropped_image.jpg
   image_circular: false # crops the image to make it circular
   address: 
 
