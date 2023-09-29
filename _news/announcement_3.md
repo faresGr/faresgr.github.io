@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 04-07-2023 07:59:00-0400
+date: 21-09-2023 07:59:00-0400
 inline: true
 related_posts: false
 ---
 
-Our paper presenting an evidential version of GANs got accepted at ECSQARU'2023 :smile:
+We presented our paper "Evidential Generative Adversarial Networks for handling imbalanced learning" at ECSQARU in Arras, France.
