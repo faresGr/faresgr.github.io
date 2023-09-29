@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Fares Grina # the website title (if blank, full name will be used instead)
-first_name: Fares 
+title: blank # the website title (if blank, full name will be used instead)
+first_name: Fares
 middle_name: 
 last_name: Grina
 email: grina.fares2@gmail.com
@@ -68,7 +68,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: faresGr
 gitlab_username: 
-twitter_username: # your Twitter handle
+twitter_username:  # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: faresgr # your LinkedIn user name
 telegram_username: # your Telegram user name

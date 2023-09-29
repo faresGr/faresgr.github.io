@@ -17,8 +17,8 @@ social: true  # includes social icons at the bottom of the page
 ---
 Hi!
 
-I'm Fares Grina, a final year PhD student co-advised by Pr. Eric Lefevre in University of Artois, France and Pr. Zied ELouedi in University of Tunis (ISG), Tunisia. I work on machine learning with an emphasis on using uncertainty modeling to solve imbalanced learning.
+I'm Fares Grina, a final-year PhD student co-advised by Professor Eric Lefevre at the University of Artois, France, and Professor Zied ELouedi at the University of Tunis (ISG), Tunisia. My research focuses on machine learning, with a particular emphasis on using uncertainty modeling to address imbalanced learning problems.
 
-Before my PhD, I received my bachelor and Masters in Computer science for decision making from the Université of Tunis (Institut Supérieur de Gestion de Tunis) in Tunisia.
+Prior to pursuing my PhD, I earned my bachelor's and master's degrees in Computer Science for Decision Making from the University of Tunis (Institut Supérieur de Gestion de Tunis) in Tunisia.
 
-I am very passionate about solving real world problems using artificial intelligence. My main goal, after PhD, is to work in an AI research position, where I could use the skills I acuired during my PhD and my work experiences, to come up with innovative and efficient ideas to solving industry problems.
+More broadly, I am interested in developing algorithms for reliable and trustworthy machine learning, with a particular focus on generative models, uncertainty estimation, and explainability.
