@@ -1,7 +1,7 @@
 ---
-permalink: /assets/pdf/resume_july23.pdf
+permalink: /assets/pdf/frenchcv.pdf
 title: cv (french)
 nav: true
 nav_order: 5
-cv_pdf: resume_july23.pdf
+cv_pdf: frenchcv.pdf
 ---
