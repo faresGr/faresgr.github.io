@@ -23,6 +23,4 @@ Prior to pursuing my PhD, I earned my bachelor's and master's degrees in Compute
 
 More broadly, I am interested in developing algorithms for reliable and trustworthy machine learning, with a particular focus on generative models, uncertainty estimation, and explainable AI.
 
-In my free time, I enjoy playing chess and indie video games, reading fantasy and sci-fi novels (currently reading Hyperion), and just recently got into making music.
-
 Get in touch at grina.fares2@gmail.com
