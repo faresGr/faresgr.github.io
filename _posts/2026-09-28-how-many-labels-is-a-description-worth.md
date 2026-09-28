@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How many labels is a good description worth?
+title: "Jev vs. classical ML: how many labels is a good description worth?"
 date: 2026-09-28 00:30:00+0200
 description: I compared Jev, a model you only describe the task to, with classical classifiers trained on up to 4,000 labels. On topics and intents it matched them; on emotions it lost, and the reason says a lot about confidence.
 tags: machine learning, uncertainty modeling
