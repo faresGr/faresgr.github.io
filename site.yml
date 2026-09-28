@@ -5,7 +5,7 @@ description: AI engineer and researcher working on uncertainty, evaluation and t
 photo: assets/img/fares.jpg
 
 bio: |
-  I'm a senior data & AI engineer at [Talan](https://www.talan.com). I currently work with [Coface](https://www.coface.com), building AI agents and data pipelines on top of business information and credit-risk data.
+  I'm an R&D AI engineer at [Talan](https://www.talan.com), currently working as a consultant at [Coface](https://www.coface.com), where I build AI agents and data pipelines on top of business information and credit-risk data.
 
   Before that, I did a PhD on uncertainty modeling for imbalanced learning with Eric Lefèvre (Université d'Artois) and Zied Elouedi (ISG, Université de Tunis). I used belief function theory to build classifiers that stay reliable when some classes are rare, noisy or overlapping.
 
