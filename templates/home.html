@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="intro">
+  <img class="portrait" src="/{{ site.photo }}" alt="Portrait of {{ site.name }}" width="480" height="480">
+  <div class="bio">{{ site.bio | md | safe }}</div>
+  <p class="links">
+    {% for l in site.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% if not loop.last %}<span aria-hidden="true">/</span>{% endif %}{% endfor %}
+    <span aria-hidden="true">/</span>{% for c in site.cv %}<a href="{{ c.url | rel }}">{{ c.label }}</a>{% if not loop.last %}<span aria-hidden="true">/</span>{% endif %}{% endfor %}
+  </p>
+</section>
+
+<section>
+  <h2 class="label">News</h2>
+  <ul class="dated">
+  {% for n in site.news %}
+    <li><time>{{ n.date | month }}</time><span>{{ n.text | md_inline | safe }}</span></li>
+  {% endfor %}
+  </ul>
+</section>
+
+{% if posts %}
+<section>
+  <h2 class="label">Writing</h2>
+  <ul class="dated">
+  {% for p in posts[:5] %}
+    <li><time datetime="{{ p.date.date() }}">{{ p.date.strftime('%b %Y') }}</time><span><a class="title" href="{{ p.url }}">{{ p.title }}</a></span></li>
+  {% endfor %}
+  </ul>
+  {% if posts | length > 5 %}<p class="more"><a href="/blog/">All posts →</a></p>{% endif %}
+</section>
+{% endif %}
+
+<section id="research">
+  <h2 class="label">Research</h2>
+  <p class="lede">Mostly from my PhD: belief function theory for learning from imbalanced, noisy and overlapping data.</p>
+  <ol class="pubs">
+  {% for p in site.publications %}
+    <li>
+      <span class="title">{{ p.title }}</span>
+      <span class="authors">{{ p.authors | replace(site.name, "<b>" ~ site.name ~ "</b>") | safe }}</span>
+      <span class="venue"><i>{{ p.venue }}</i>{% for k, v in p.links.items() %} · <a href="{{ v | rel }}">{{ k }}</a>{% endfor %}</span>
+    </li>
+  {% endfor %}
+  </ol>
+</section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block main %}
+<h1 class="page-title">Writing</h1>
+<p class="lede">Experiments and notes on machine learning, uncertainty and AI systems.</p>
+<ul class="posts">
+{% for p in posts %}
+  <li>
+    <time datetime="{{ p.date.date() }}">{{ p.date.strftime('%d %b %Y') }}</time>
+    <a class="title" href="{{ p.url }}">{{ p.title }}</a>
+    {% if p.description %}<p>{{ p.description }}</p>{% endif %}
+  </li>
+{% else %}
+  <li>Nothing here yet.</li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% set title = (page.title ~ " · " ~ site.name) if page.title else site.name %}
+{% set description = page.description or site.description %}
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ page.url | abs }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:type" content="{{ 'article' if page.date else 'website' }}">
+<meta property="og:title" content="{{ page.title or site.name }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ page.url | abs }}">
+{% if page.og_image %}<meta property="og:image" content="{{ page.og_image | abs }}">{% endif %}
+<meta name="twitter:card" content="{{ 'summary_large_image' if page.og_image else 'summary' }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23b4532a'/><text x='16' y='22' font-family='Georgia,serif' font-size='17' text-anchor='middle' fill='white'>fg</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="name" href="/">{{ site.name }}</a>
+    <nav>
+      <a href="/blog/"{% if page.url.startswith('/blog') %} aria-current="page"{% endif %}>writing</a>
+      <a href="/#research">research</a>
+      <a href="{{ site.cv[0].url | rel }}">cv</a>
+    </nav>
+  </header>
+  <main>
+{% block main %}{% endblock %}
+  </main>
+  <footer class="foot">
+    <span>© {{ year }} {{ site.name }}</span>
+    <span><a href="/feed.xml">rss</a> · <a href="https://github.com/faresGr/faresgr.github.io">source</a></span>
+  </footer>
+</div>
+</body>
+</html>

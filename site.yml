@@ -1,0 +1,82 @@
+# Everything on the home page lives here. Edit, push, and the site rebuilds.
+name: Fares Grina
+url: https://faresgr.github.io
+description: AI engineer and researcher working on uncertainty, evaluation and trustworthy machine learning.
+photo: assets/img/fares.jpg
+
+bio: |
+  I'm an AI engineer at [Coface](https://www.coface.com), where I build AI systems on top of business information and credit-risk data.
+
+  Before that, I did a PhD on uncertainty modeling for imbalanced learning with Eric Lefèvre (Université d'Artois) and Zied Elouedi (ISG, Université de Tunis). I used belief function theory to build classifiers that stay reliable when some classes are rare, noisy or overlapping.
+
+  These days I think about when we can trust AI systems: how to evaluate LLMs, what their confidence scores actually mean, and when a small decision model is all you need.
+
+links:
+  - label: Email
+    url: mailto:grina.fares2@gmail.com
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/faresgr
+  - label: GitHub
+    url: https://github.com/faresGr
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=EgFDd9IAAAAJ
+  - label: X
+    url: https://x.com/_faresgr
+
+cv:
+  - label: CV (English)
+    url: assets/pdf/englishresume_grina2024.pdf
+  - label: CV (français)
+    url: assets/pdf/cv_grina_janvier2024.pdf
+
+news:
+  - date: 2026-09
+    text: "New post: [Jev vs. classical ML: how many labels is a good description worth?](/blog/2026/how-many-labels-is-a-description-worth/)"
+  - date: 2025-06
+    text: "Our paper *Évaluation de la robustesse des LLM : proposition d'un cadre méthodologique et développement d'un benchmark* was accepted at CORIA-TALN 2025."
+  - date: 2023-09
+    text: "Presented *Evidential Generative Adversarial Networks for handling imbalanced learning* at ECSQARU 2023 in Arras, France."
+
+publications:
+  - title: Evidential Generative Adversarial Networks for handling imbalanced learning
+    authors: Fares Grina, Zied Elouedi, Eric Lefèvre
+    venue: ECSQARU 2023
+    links:
+      pdf: assets/pdf/ecsqaru2023.pdf
+      code: https://github.com/faresGr/code-evidential-gan
+  - title: Re-sampling of multi-class imbalanced data using belief function theory and ensemble learning
+    authors: Fares Grina, Zied Elouedi, Eric Lefèvre
+    venue: International Journal of Approximate Reasoning, 2023
+    links:
+      paper: https://doi.org/10.1016/j.ijar.2023.02.006
+      pdf: https://hal.science/hal-04099033/document
+  - title: Learning from imbalanced data using an evidential undersampling-based ensemble
+    authors: Fares Grina, Zied Elouedi, Eric Lefèvre
+    venue: SUM 2022
+    links:
+      paper: https://doi.org/10.1007/978-3-031-18843-5_16
+      pdf: https://hal.science/hal-03840612/document
+  - title: Evidential hybrid re-sampling for multi-class imbalanced data
+    authors: Fares Grina, Zied Elouedi, Eric Lefèvre
+    venue: IPMU 2022
+    links:
+      paper: https://doi.org/10.1007/978-3-031-08974-9_49
+      pdf: https://hal.science/hal-03764086/document
+  - title: "Déséquilibre multi-classes : une approche évidentielle de rééchantillonnage hybride"
+    authors: Fares Grina, Zied Elouedi, Eric Lefèvre
+    venue: LFA 2022
+    links:
+      paper: https://hal.science/hal-03840621
+      pdf: https://hal.science/hal-03840621/document
+  - title: Uncertainty-aware resampling method for imbalanced classification using evidence theory
+    authors: Fares Grina, Zied Elouedi, Eric Lefèvre
+    venue: ECSQARU 2021
+    links:
+      paper: https://doi.org/10.1007/978-3-030-86772-0_25
+      pdf: https://hal.science/hal-03643751/file/ecsqaru2021_FV_GRINA.pdf
+  - title: Evidential undersampling approach for imbalanced datasets with class-overlapping and noise
+    authors: Fares Grina, Zied Elouedi, Eric Lefèvre
+    venue: MDAI 2021
+    links:
+      paper: https://doi.org/10.1007/978-3-030-85529-1_15
+      pdf: https://hal.science/hal-03764122/file/mdai2021_faresgr_vf.pdf

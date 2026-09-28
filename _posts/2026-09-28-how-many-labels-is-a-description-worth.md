@@ -53,7 +53,7 @@ One setup detail matters: my original Jev instruction said “classify the prima
 
 On two of the three tasks, the classical models never caught up within the label budgets I tested.
 
-{% include figure.html path="assets/img/blog/jev-vs-classical-chart.png" class="img-fluid rounded z-depth-1" alt="Learning curves of five classical configurations against Jev's original zero-shot score on AG News, Banking77 and Emotion" %}
+![Learning curves of five classical configurations against Jev's original zero-shot score on AG News, Banking77 and Emotion](/assets/img/blog/jev-vs-classical-chart.png)
 
 *Classical curves show mean ± one standard deviation across three training seeds, not confidence intervals. The horizontal axis uses a real logarithmic scale. Both XGBoost variants are included; the dummy baseline is available in the repository reports. Validation labels are additional.*
 
