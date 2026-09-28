@@ -77,6 +77,10 @@ def build():
     write("/blog/", env.get_template("blog.html").render(**common, posts=posts, page={"url": "/blog/", "title": "Writing"}))
     for post in posts:
         write(post["url"], env.get_template("post.html").render(**common, page=post))
+    # Old al-folio address, still linked from the CV.
+    write("/publications/", '<!doctype html><meta charset="utf-8"><title>Research</title>'
+          '<meta http-equiv="refresh" content="0; url=/#research"><link rel="canonical" href="/#research">'
+          '<a href="/#research">Research</a>')
     write("/404.html", env.get_template("404.html").render(**common, page={"url": "/404.html", "title": "Not found"}))
 
     items = "".join(

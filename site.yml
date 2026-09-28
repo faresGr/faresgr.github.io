@@ -5,7 +5,7 @@ description: AI engineer and researcher working on uncertainty, evaluation and t
 photo: assets/img/fares.jpg
 
 bio: |
-  I'm an AI engineer at [Coface](https://www.coface.com), where I build AI systems on top of business information and credit-risk data.
+  I'm a senior data & AI engineer at [Talan](https://www.talan.com). I currently work with [Coface](https://www.coface.com), building AI agents and data pipelines on top of business information and credit-risk data.
 
   Before that, I did a PhD on uncertainty modeling for imbalanced learning with Eric Lefèvre (Université d'Artois) and Zied Elouedi (ISG, Université de Tunis). I used belief function theory to build classifiers that stay reliable when some classes are rare, noisy or overlapping.
 
@@ -25,19 +25,23 @@ links:
 
 cv:
   - label: CV (English)
-    url: assets/pdf/englishresume_grina2024.pdf
+    url: assets/pdf/fares_grina_cv.pdf
   - label: CV (français)
-    url: assets/pdf/cv_grina_janvier2024.pdf
+    url: assets/pdf/fares_grina_cv_fr.pdf
 
 news:
   - date: 2026-09
     text: "New post: [Jev vs. classical ML: how many labels is a good description worth?](/blog/2026/how-many-labels-is-a-description-worth/)"
   - date: 2025-06
-    text: "Our paper *Évaluation de la robustesse des LLM : proposition d'un cadre méthodologique et développement d'un benchmark* was accepted at CORIA-TALN 2025."
+    text: "Our paper *Évaluation de la robustesse des LLM : proposition d'un cadre méthodologique et développement d'un benchmark* was accepted at the EvalLLM workshop, CORIA-TALN 2025."
   - date: 2023-09
     text: "Presented *Evidential Generative Adversarial Networks for handling imbalanced learning* at ECSQARU 2023 in Arras, France."
 
 publications:
+  - title: "Évaluation de la robustesse des LLM : proposition d'un cadre méthodologique et développement d'un benchmark"
+    authors: Fares Grina, N. Kalashnikova
+    venue: EvalLLM workshop, CORIA-TALN 2025
+    links: {}
   - title: Evidential Generative Adversarial Networks for handling imbalanced learning
     authors: Fares Grina, Zied Elouedi, Eric Lefèvre
     venue: ECSQARU 2023
