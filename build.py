@@ -64,7 +64,9 @@ def build():
     env.filters.update(md=md, md_inline=md_inline, abs=lambda u: u if "://" in u else site["url"] + "/" + u.lstrip("/"),
                        rel=lambda u: u if (":" in u or u.startswith("/")) else "/" + u,
                        month=lambda s: dt.datetime.strptime(str(s), "%Y-%m").strftime("%b %Y"))
-    common = {"site": site, "year": now.year}
+    import hashlib
+    css_version = hashlib.sha256((ROOT / "assets" / "style.css").read_bytes()).hexdigest()[:10]
+    common = {"site": site, "year": now.year, "css_version": css_version}
 
     if OUT.exists():
         shutil.rmtree(OUT)
