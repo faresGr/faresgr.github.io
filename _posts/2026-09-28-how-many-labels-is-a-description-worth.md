@@ -68,7 +68,7 @@ It was also cheap: about **$0.094 in estimated API token charges for the origina
 
 ## Where it loses, and why that's interesting
 
-On Emotion, Jev scored 0.49. The classical models passed it between the tested budgets of 50 and 200 labeled examples per emotion: 300–1,200 training labels in total, plus 300 validation labels. XGBoost on TF-IDF reached 0.82 at 500 per emotion, or 3,000 training labels.
+On Emotion, Jev scored 0.49. The stronger classical baselines passed it between the tested budgets of 50 and 200 labeled examples per emotion: 300–1,200 training labels in total, plus 300 validation labels. XGBoost on TF-IDF reached 0.82 at 500 per emotion, or 3,000 training labels.
 
 The easy conclusion would be "Jev is bad at emotions". Looking at a few confident mistakes raised a more specific question: is it misunderstanding the text, the labeling convention, or both? These examples are illustrative, not a systematic annotation audit:
 
@@ -101,7 +101,7 @@ One more detail worth knowing: Jev's `confidence` field is not the probability o
 
 ## What changes when decisions become cheap
 
-Think about how often we ask a language model to read something, write an answer, and then immediately reduce that answer to a category or a yes/no. Does this document matter? Which tool should handle this request? Is there enough information to continue? For those tasks the product is a decision, and the question is how cheaply and reliably we can get it.
+The applications I am most curious about involve repeated, bounded judgments: does this document matter, which tool should handle this request, and is there enough information to continue? Each is a small classification problem. The opportunity is to make those decisions useful inside a larger workflow, with clear rules for what happens when the model is wrong.
 
 At around a quarter of a second and a fraction of a cent per call, a decision becomes something you can put in places where you previously wouldn't have bothered. A search system could check whether it has enough evidence before fetching more. An agent could repeatedly decide whether to continue, ask for clarification or switch tools. Individually these are small judgments; across an application they change how it behaves.
 
